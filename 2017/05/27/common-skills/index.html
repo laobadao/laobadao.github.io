@@ -247,7 +247,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hexo"><span class="post-toc-number">1.</span> <span class="post-toc-text">Hexo</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Markdown"><span class="post-toc-number">2.</span> <span class="post-toc-text">Markdown</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Git"><span class="post-toc-number">3.</span> <span class="post-toc-text">Git</span></a></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -394,7 +394,11 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><blockquote>
+<p>1.Hexo 删除文章：先从本地 \source_posts\ 中删除相应的.md文件 以及根目录下的 db.json (这个我试了 db.json 不删也可以),然后<figure class="highlight plain"><figcaption><span>hexo clean ``` 一下，接着 ``` $ hexo g -d ``` ,此时稍等下成功后，刷新浏览器，那篇文章就不再啦！</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&gt;2.hexo 新建文章 ```$ hexo new &quot;my new article&quot;</div></pre></td></tr></table></figure></p>
+<p>3.生成本地静态文件 <figure class="highlight plain"><figcaption><span>hexo g ```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&gt;4.远程部署到网站 ```$ hexo d ```  </div><div class="line"></div><div class="line">&gt;5.本地生成和远程部署结合使用 ```$ hexo g -d</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2>
     
 
     
