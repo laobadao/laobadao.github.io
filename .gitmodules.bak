@@ -1,4 +1,4 @@
 [submodule "themes/material"]
 	path = themes/material
 	url = https://github.com/laobadao/laobadao.github.com.git
-	ignore = dirty
+	ignore = untracked
