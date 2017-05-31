@@ -69,5 +69,5 @@ theme: material
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/laobadao/laobadao.github.com.git
+  repo: https://github.com/laobadao/laobadao.github.io.git
   branch: master
