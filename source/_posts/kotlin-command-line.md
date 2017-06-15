@@ -35,3 +35,7 @@ comments: true
 将独立编译器解压缩到一个目录中，并可选择将 bin 目录路径地址添加到系统路径里。bin 目录中包含在 Windows，OS X 和 Linux 上编译和运行 Kotlin 所需的脚本。
 
 >Unzip the standalone compiler into a directory and optionally add the bin directory to the system path. The bin directory contains the scripts needed to compile and run Kotlin on Windows, OS X and Linux.
+
+todo 我用的这种方式，最简单，最高效，主要是其他几种方式，在我 mac 电脑上都有点问题。so ，不过当然那些问题后续都会再去解决的。
+
+![下载的 kotlin-release 包](pic/kotlin-release.png)
