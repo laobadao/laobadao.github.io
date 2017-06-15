@@ -396,19 +396,32 @@
     
         <p> <em>新手上路，脑子不好使，怕项目忙起来后，中间要是隔比较长的时间不更新，再给忘咯</em></p>
 <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><a href="http://www.jianshu.com/c/7fafdc0abb5b" target="_blank" rel="external">简书 - Hexo 专题</a></p>
-<p>1.Hexo 删除文章：先从本地 \source\_posts\ 中删除相应的.md文件以及根目录下的 db.json (这个我试了 db.json 不删也可以),然后 hexo clean  一下，接着  $ hexo g -d  ,成功后稍等一会，刷新浏览器，bingo！</p>
-<p>2.hexo 新建文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new &quot;my new article&quot;</div></pre></td></tr></table></figure></p>
-<p>3.生成本地静态文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g //generate</div></pre></td></tr></table></figure></p>
-<p>4.远程部署到网站<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d //deploy</div></pre></td></tr></table></figure></p>
-<p>5.本地生成和远程部署结合使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g -d</div></pre></td></tr></table></figure></p>
-<p>6.本地启动服务器，<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 下启动。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s //server</div></pre></td></tr></table></figure></p>
+<ol>
+<li><p>Hexo 删除文章：先从本地 \source\_posts\ 中删除相应的.md文件以及根目录下的 db.json (这个我试了 db.json 不删也可以),然后 hexo clean  一下，接着  $ hexo g -d  ,成功后稍等一会，刷新浏览器，bingo！</p>
+</li>
+<li><p>hexo 新建文章</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new &quot;my new article&quot;</div></pre></td></tr></table></figure>
+</li>
+<li><p>生成本地静态文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g //generate</div></pre></td></tr></table></figure>
+</li>
+<li><p>远程部署到网站  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d //deploy</div></pre></td></tr></table></figure>
+</li>
+<li><p>本地生成和远程部署结合使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g -d</div></pre></td></tr></table></figure>
+</li>
+<li><p>本地启动服务器，<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 下启动。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s //server</div></pre></td></tr></table></figure>
+</li>
+</ol>
 <h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><hr>
 <h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p><em>就跟我猜的一样，以我对自身的了解，项目忙起来之后，由于压力和开发周期的影响，就很难再抽出时间去写博客，所以距离上次已经过去半个月了，有些命令不常用，记忆已经模糊了，脑子里装的东西越多，再加上没有梳理，没有融会贯通的消化吸收，现在就成了一团浆糊。（当然这样是不对的，一定要改滴）</em></p>
-<p>1.hexo 和 GitHub 搭建的博客，因为将源代码和发布版放到一个仓库里面，所以，管理起来方便很多，但是需要在 push 的时候指定仓库分支。如：把本地修改的源代码提交到指定 repository</p>
+<p> hexo 和 GitHub 搭建的博客，因为将源代码和发布版放到一个仓库里面，所以，管理起来方便很多，但是需要在 push 的时候指定仓库分支。如：把本地修改的源代码提交到指定 repository</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push git@github.com:laobadao/laobadao.github.io.git hexo</div></pre></td></tr></table></figure>
-<p>2.git 基本常用命令</p>
+<p>1) git 基本常用命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$ git clone git@github.com:laobadao/laobadao.github.io.git //首次把 Github repository 的内容克隆下来</div><div class="line"></div><div class="line">$ git pull //把不同设备上自己提交的代码，先获取下来</div><div class="line"></div><div class="line">$ git status //检查本地仓库状态，是否有修改的未添加，是否有已添加未提交的，等</div><div class="line"></div><div class="line">$ git add -A //把本地修改的内容全部添加到仓库</div><div class="line"></div><div class="line">$ git commit -m &quot;log content&quot; //本次提交的修改记录日志</div><div class="line"></div><div class="line">$ git push //推送发布到 Github 指定的 repository 上</div></pre></td></tr></table></figure>
-<p>3.git push 后常见的提示</p>
+<p>2) git push 后常见的提示</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">fatal: The upstream branch of your current branch does not match</div><div class="line">the name of your current branch.  To push to the upstream branch</div><div class="line">on the remote, use</div><div class="line"></div><div class="line">    $ git push https://github.com/laobadao/laobadao.github.io.git HEAD:master</div><div class="line"></div><div class="line">To push to the branch of the same name on the remote, use</div><div class="line"></div><div class="line">    $ git push https://github.com/laobadao/laobadao.github.io.git hexo</div></pre></td></tr></table></figure>
 <p>出现上述提示的原因是，我只使用了 git push ,对于这个仓库而言，里面有两个分支，而我本地当前仓库默认的主分支和当前分支不符合，所以需要指定路径地址，然后我就执行了以下命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push https://github.com/laobadao/laobadao.github.io.git hexo</div></pre></td></tr></table></figure>
