@@ -31,6 +31,12 @@ $ hexo d //deploy
 ```
  $ hexo g -d
 ```
+6.本地启动服务器，http://localhost:4000 下启动。
+```
+ $ hexo s //server
+```
+
+
 ## Markdown
 
 ## Git
