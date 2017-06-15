@@ -55,6 +55,8 @@ $ git push git@github.com:laobadao/laobadao.github.io.git hexo
 2.git 基本常用命令
 
 ```
+$ git clone git@github.com:laobadao/laobadao.github.io.git //首次把 Github repository 的内容克隆下来
+
 $ git pull //把不同设备上自己提交的代码，先获取下来
 
 $ git status //检查本地仓库状态，是否有修改的未添加，是否有已添加未提交的，等
@@ -66,3 +68,37 @@ $ git commit -m "log content" //本次提交的修改记录日志
 $ git push //推送发布到 Github 指定的 repository 上
 
 ```
+
+3.git push 后常见的提示
+
+```
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    $ git push https://github.com/laobadao/laobadao.github.io.git HEAD:master
+
+To push to the branch of the same name on the remote, use
+
+    $ git push https://github.com/laobadao/laobadao.github.io.git hexo
+```
+
+出现上述提示的原因是，我只使用了 git push ,对于这个仓库而言，里面有两个分支，而我本地当前仓库默认的主分支和当前分支不符合，所以需要指定路径地址，然后我就执行了以下命令
+
+```
+git push https://github.com/laobadao/laobadao.github.io.git hexo
+```
+之后又给出了如下提示
+
+```
+fatal: unable to access 'https://github.com/laobadao/laobadao.github.io.git/': Server aborted the SSL handshake
+```
+
+*中间有一部分，需要详述，未完待续*
+
+之后改为
+
+```
+git push git@github.com:laobadao/laobadao.github.io.git hexo
+```
+bingo 成功啦
