@@ -20,4 +20,11 @@ comments: true
 
 *学生我搞 android 开发，一看到应用程序四个字，总觉得会是一个很大的东西，但是闷头一想，你写了哪怕几行代码，编译运行后，其功能只是输出一句话，那它也是个应用程序啊，我不能否认，所以，so easy,不用害怕。*
 
->This tutorial walks us through creating a Hello World application using the command line compiler. 
+>This tutorial walks us through creating a Hello World application using the command line compiler.
+
+### 下载编译器
+>Downloading the compiler
+
+每个版本都附带编译器的独立版本。我们可以从 [GitHub Releases] (https://github.com/JetBrains/kotlin/releases/tag/v1.1.2-5) 下载。最新版本是 1.1.2-5。
+
+>Every release ships with a standalone version of the compiler. We can download it from GitHub Releases. The latest release is 1.1.2-5.
