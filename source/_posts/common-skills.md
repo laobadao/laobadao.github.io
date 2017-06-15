@@ -13,25 +13,25 @@ categories: Writing
 
 [简书 - Hexo 专题](http://www.jianshu.com/c/7fafdc0abb5b)
 
-1.Hexo 删除文章：先从本地 \source\\\_posts\ 中删除相应的.md文件以及根目录下的 db.json (这个我试了 db.json 不删也可以),然后 hexo clean  一下，接着  $ hexo g -d  ,成功后稍等一会，刷新浏览器，bingo！
+1. Hexo 删除文章：先从本地 \source\\\_posts\ 中删除相应的.md文件以及根目录下的 db.json (这个我试了 db.json 不删也可以),然后 hexo clean  一下，接着  $ hexo g -d  ,成功后稍等一会，刷新浏览器，bingo！
 
-2.hexo 新建文章
+2. hexo 新建文章
 ```
 $ hexo new "my new article"
 ```
-3.生成本地静态文件
+3. 生成本地静态文件
 ```
 $ hexo g //generate
 ```
-4.远程部署到网站  
+4. 远程部署到网站  
 ``` bash
 $ hexo d //deploy
 ```
-5.本地生成和远程部署结合使用
+5. 本地生成和远程部署结合使用
 ```
  $ hexo g -d
 ```
-6.本地启动服务器，http://localhost:4000 下启动。
+6. 本地启动服务器，http://localhost:4000 下启动。
 ```
  $ hexo s //server
 ```
@@ -45,14 +45,14 @@ $ hexo d //deploy
 
 *就跟我猜的一样，以我对自身的了解，项目忙起来之后，由于压力和开发周期的影响，就很难再抽出时间去写博客，所以距离上次已经过去半个月了，有些命令不常用，记忆已经模糊了，脑子里装的东西越多，再加上没有梳理，没有融会贯通的消化吸收，现在就成了一团浆糊。（当然这样是不对的，一定要改滴）*
 
-1.hexo 和 GitHub 搭建的博客，因为将源代码和发布版放到一个仓库里面，所以，管理起来方便很多，但是需要在 push 的时候指定仓库分支。如：把本地修改的源代码提交到指定 repository
+ hexo 和 GitHub 搭建的博客，因为将源代码和发布版放到一个仓库里面，所以，管理起来方便很多，但是需要在 push 的时候指定仓库分支。如：把本地修改的源代码提交到指定 repository
 
 ```
 $ git push git@github.com:laobadao/laobadao.github.io.git hexo
 
 ```
 
-2.git 基本常用命令
+1) git 基本常用命令
 
 ```
 $ git clone git@github.com:laobadao/laobadao.github.io.git //首次把 Github repository 的内容克隆下来
@@ -69,7 +69,7 @@ $ git push //推送发布到 Github 指定的 repository 上
 
 ```
 
-3.git push 后常见的提示
+2) git push 后常见的提示
 
 ```
 fatal: The upstream branch of your current branch does not match
