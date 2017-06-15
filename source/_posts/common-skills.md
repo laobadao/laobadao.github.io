@@ -39,4 +39,30 @@ $ hexo d //deploy
 
 ## Markdown
 
+---
+
 ## Git
+
+*就跟我预测的，以我对自身的了解，项目忙起来之后，再抽出时间去写博客，已经过去半个月了，有些命令不常用，就模糊了，脑子里装的东西越多，又没有梳理过，融会贯通的吸收掉，现在就成了一团浆糊。*
+
+1.hexo 和 GitHub 搭建的博客，因为将源代码和发布版放到一个仓库里面，所以，管理起来方便很多，但是需要在 push 的时候指定仓库分支。如：把本地修改的源代码提交到指定 repository
+
+```
+$ git push git@github.com:laobadao/laobadao.github.io.git hexo
+
+```
+
+2.git 基本常用命令
+
+```
+$ git pull //把不同设备上自己提交的代码，先获取下来
+
+$ git status //检查本地仓库状态，是否有修改的未添加，是否有已添加未提交的，等
+
+$ git add -A //把本地修改的内容全部添加到仓库
+
+$ git commit -m "log content" //本次提交的修改记录日志
+
+$ git push //推送发布到 Github 指定的 repository 上
+
+```
