@@ -95,3 +95,5 @@ fun main(args: Array<String>) {
 ```
 $ kotlinc hello.kt -include-runtime -d hello.jar
 ```
+
+>The -d option indicates what we want the output of the compiler to be called and may be either a directory name for class files or a .jar file name. The -include-runtime option makes the resulting .jar file self-contained and runnable by including the Kotlin runtime library in it. If you want to see all available options run
