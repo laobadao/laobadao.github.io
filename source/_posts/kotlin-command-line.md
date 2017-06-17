@@ -98,4 +98,4 @@ $ kotlinc hello.kt -include-runtime -d hello.jar
 
 >The -d option indicates what we want the output of the compiler to be called and may be either a directory name for class files or a .jar file name. The -include-runtime option makes the resulting .jar file self-contained and runnable by including the Kotlin runtime library in it. If you want to see all available options run : kotlinc -help
 
-我们通过 kotlinc 去编译 hello.kt 文件，-d 选项表示，最后想要调用编译器的输出，并且可以是类文件的目录名称或.jar文件名。
+我们通过 kotlinc 去编译 hello.kt 文件，-include-runtime 选项，表示通过把 Kotlin 运行时库包含进来，来运行 hello.kt 中的代码，最后生成 .jar 文件。-d 选项表示，通过调用编译器的输出，最后生成 hello.jar ，kotlin 是基于 jvm 的语言，最终还是生成 jar包的，当然也可以是类文件的目录名称或.jar文件名。
