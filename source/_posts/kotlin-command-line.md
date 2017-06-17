@@ -41,7 +41,7 @@ comments: true
 
 todo 我用的这种方式，最简单，最高效，主要是其他几种方式，在我 mac 电脑上都有点问题。so ，不过当然那些问题后续都会再去解决的。
 
-![下载的 kotlin-release 包](/img/kotlin-release.png)
+![下载的 kotlin-release 包](/img/kotlin_release.png)
 
 .zip 包下载完之后，解压，把解压后的文件夹，挪到个固定的，不会不小心删掉的地方，打开找到 bin 文件夹，然后配置在 Mac 上的环境变量，我还是整了个 Kotlin_Home ,以便后期更新 Kotlin ,当然如果你选的其他方式安装的，这个就省略啦,先打开几个 terminal 窗口待用。
 
@@ -58,7 +58,7 @@ export KOTLIN_HOME=/Users/zhaojunjun/kotlinc
 export PATH=$PATH:$KOTLIN_HOME/bin
 ```
 
-![配置 kotlin 环境变量](/img/kotlin-path.png)
+![配置 kotlin 环境变量](/img/kotlin_path.png)
 
 按照提示保存配置并退出,之后输入以下命令使配置生效
 
