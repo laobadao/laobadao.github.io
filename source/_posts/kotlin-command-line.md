@@ -3,7 +3,7 @@ title: 基础篇 | Kotlin 环境搭建-命令行
 date: 2017-06-15 22:23:11
 tags:
   - Kotlin
-categories: Kotlin-Android
+categories: Kotlin
 comments: true
 ---
 
