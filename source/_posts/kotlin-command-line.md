@@ -81,3 +81,9 @@ $ kotlinc-jvm //输入此命令，会进入交互式操作
 1. 使用 Kotlin 创建一个简单的应用程序，显示一句话，例如 Hello，Kotlin !使用我们最喜欢的编辑器，我用的是 Atom, 主要是我写博客用的是 Markdown, Atom 也支持 .md 文件的预览，so ... ,在 Mac 上创建个固定的文件夹，里面专门用来放学习 Kotlin 相关的文件，创建一个名为 hello.kt 的新文件，Mac 上在 Finder 里不支持直接创建文件，只能新建文件夹，所以目前先用别的方式代替，粘贴复制改扩展名，扩展名为 .kt 代表是 Kotlin 文件，跟 .java 代表是 java 文件一样，然后使用 Kotlin 语言输入如下代码：
 
 >Create a simple application in Kotlin that displays Hello, World!. Using our favorite editor, we create a new file called hello.kt with the following:
+
+```
+fun main(args: Array<String>) {
+    println("Hello,Kotlin.My name is ZJ，I'm programming with kotlin.")
+}
+```
