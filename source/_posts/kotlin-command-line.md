@@ -98,14 +98,19 @@ $ kotlinc hello.kt -include-runtime -d hello.jar
 
 >The -d option indicates what we want the output of the compiler to be called and may be either a directory name for class files or a .jar file name. The -include-runtime option makes the resulting .jar file self-contained and runnable by including the Kotlin runtime library in it. If you want to see all available options run : kotlinc -help
 
-我们通过 kotlinc 去编译 hello.kt 文件，-include-runtime 选项，表示通过把 Kotlin 运行时库包含进来，来运行 hello.kt 中的代码，最后生成 .jar 文件。-d 选项表示，通过调用编译器的输出，最后生成 hello.jar ，kotlin 是基于 jvm 的语言，最终还是生成 jar包的，当然也可以是类文件的目录名称或.jar文件名。
-
+我们通过 kotlinc 去编译 hello.kt 文件，-include-runtime 选项，表示通过把 Kotlin 运行时库包含进来，来运行 hello.kt 中的代码，最后生成 .jar 文件。-d 选项表示，通过调用编译器的输出，最后生成 hello.jar ，kotlin 是基于 jvm（Java Virtual Machine) 的语言，最终还是生成 jar包的，当然也可以是类文件的目录名称或.jar文件名。其他的命令选项可以通过运行 kotlinc -help 来进行查看.
 ```
+
 $ kotlinc hello.kt -include-runtime -d hello0.jar//生成的 jar包命名为 hello0.jar
 
 $ kotlinc hello.kt -include-runtime -d hello20.jar //生成的 jar包命名为 hello20.jar
 
-$ kotlinc hello.kt -include-runtime -d hello20 //生成 hello20 目录文件夹 里面包含 .class文件等 
+$ kotlinc hello.kt -include-runtime -d hello20 //生成 hello20 命名的目录文件夹 里面包含 .class文件等
 
-$ kotlinc hello.kt -include-runtime -d hellofolder
+$ kotlinc hello.kt -include-runtime -d hellofolder //生成 hellofolder 命名的目录文件夹 里面包含 .class文件等
 ```
+![kotlinc runtime](pic/kotlin_jar.png)
+
+其实也就20多种，命令也不多，可以整体看一看，了解一下。
+
+![kotlinc-help](pic/kotlin_help.png)
