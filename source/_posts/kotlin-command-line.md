@@ -43,6 +43,41 @@ todo 我用的这种方式，最简单，最高效，主要是其他几种方式
 
 ![下载的 kotlin-release 包](pic/kotlin-release.png)
 
+.zip 包下载完之后，解压，把解压后的文件夹，挪到个固定的，不会不小心删掉的地方，打开找到 bin 文件夹，然后配置在 Mac 上的环境变量，我还是整了个 Kotlin_Home ,以便后期更新 Kotlin ,当然如果你选的其他方式安装的，这个就省略啦,先打开几个 terminal 窗口待用。
+
+```
+$ nano ~/.bash_profile //使用 nano 命令打开 .bash_profile 修改环境变量
+
+```
+
+之后新打开了一个编辑窗口，添加以下代码
+
+```
+export KOTLIN_HOME=/Users/zhaojunjun/kotlinc
+
+export PATH=$PATH:$KOTLIN_HOME/bin
+```
+
+![配置 kotlin 环境变量](pic/kotlin-path.png)
+
+按照提示保存配置并退出,之后输入以下命令使配置生效
+
+```
+source ~/.bash_profile
+```
+
+哒哒，接下来就是见证奇迹的时刻。
+
+```
+$ kotlinc -help //输入此命令后，若出现一些帮助命令，则安装配置成功
+$ kotlinc-jvm //输入此命令，会进入交互式操作
+```
+![kotlinc-jvm](pic/kotlin_jvm.png)
+
 ## 创建并运行第一个应用程序
 
 > Creating and running a first application
+
+1. 使用 Kotlin 创建一个简单的应用程序，显示一句话，例如 Hello，Kotlin !使用我们最喜欢的编辑器，我用的是 Atom, 主要是我写博客用的是 Markdown, Atom 也支持 .md 文件的预览，so ... ,在 Mac 上创建个固定的文件夹，里面专门用来放学习 Kotlin 相关的文件，创建一个名为 hello.kt 的新文件，Mac 上在 Finder 里不支持直接创建文件，只能新建文件夹，所以目前先用别的方式代替，粘贴复制改扩展名，扩展名为 .kt 代表是 Kotlin 文件，跟 .java 代表是 java 文件一样，然后使用 Kotlin 语言输入如下代码：
+
+>Create a simple application in Kotlin that displays Hello, World!. Using our favorite editor, we create a new file called hello.kt with the following:
