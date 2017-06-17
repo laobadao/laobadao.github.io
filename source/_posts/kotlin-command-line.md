@@ -89,4 +89,9 @@ fun main(args: Array<String>) {
 ```
 
 -2. 使用 Kotlin 编译器编译该应用程序
+
 >Compile the application using the Kotlin compiler
+
+```
+$ kotlinc hello.kt -include-runtime -d hello.jar
+```
