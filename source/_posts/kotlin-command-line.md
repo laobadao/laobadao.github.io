@@ -42,3 +42,7 @@ comments: true
 todo 我用的这种方式，最简单，最高效，主要是其他几种方式，在我 mac 电脑上都有点问题。so ，不过当然那些问题后续都会再去解决的。
 
 ![下载的 kotlin-release 包](pic/kotlin-release.png)
+
+## 创建并运行第一个应用程序
+
+> Creating and running a first application
