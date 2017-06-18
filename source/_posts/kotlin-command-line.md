@@ -114,3 +114,50 @@ $ kotlinc hello.kt -include-runtime -d hellofolder //生成 hellofolder 命名�
 其实也就20多种，命令也不多，可以整体看一看，了解一下。
 
 ![kotlinc-help](kotlin-command-line/kotlin_help.png)
+
+todo
+
+-3. 运行应用程序
+
+>Run the application.
+
+```
+$ java -jar hello20.jar //执行该语句，运行 hello20.jar 如下输出
+```
+![java -jar](kotlin-command-line/java_jar.png)
+
+## 编译库 Compiling a library
+
+>If you're developing a library to be used by other Kotlin applications, you can produce the .jar file without including the Kotlin runtime into it.
+
+如果您正在开发可以被其他 Kotlin 应用程序所使用的库，则可以用以下命令生成.jar文件，而不会在其中包含 Kotlin 运行时。
+
+```
+$ kotlinc hello.kt -d hellolib.jar
+```
+
+>Since binaries compiled this way depend on the Kotlin runtime you should make sure the latter is present in the classpath whenever your compiled library is used.
+
+由于以这种方式编译的二进制文件依赖于 Kotlin 运行时，您应该确保在使用编译库时，后者存在于类路径中。
+
+>You can also use the kotlin script to run binaries produced by the Kotlin compiler:
+
+您还可以使用 kotlin 脚本,去运行 Kotlin 编译器生成的二进制文件：
+
+```
+$ kotlin -classpath hello.jar HelloKt // 使用 kotlinc -classpath 去运之前编译生成的 hello.jar 包中的 名为 HelloKt.class
+```
+
+这个就要连贯起来说了，比如我一开始创建的是 hellozj.kt ,然后我使用命令将其编译生成的是 hellozjlib.jar 包，我特意都是使用的不同的名字，以便了解其原理，最后当我要使用 kotlin -classpath 去运行某个 jar 包的二进制文件时，其实是去看  jar 包中的 .class 文件。
+
+其实就是想搞明白为什么官网中上述语句，最后跟着的是 HelloKt，这个到底是哪来的。
+
+![kotlinc all](kotlin-command-line/kotlin_classpath.png)
+
+
+e.g. 当我只在当前窗口执行以下语句,则会在 hellozj.kt 文件同级目录下生成 HellozjKt.class 和 META-INF
+
+```
+$ kotlinc hellozj.kt
+```
+![kotlinc hellozj.kt](kotlin-command-line/kotlinc_kt.png)
