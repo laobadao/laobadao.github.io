@@ -1,9 +1,10 @@
 ---
-title: Hexo & Git & Markdown 个人常用操作
+title: Command-line 个人常用操作
 date: 2017-05-27 12:03:47
 tags:
 - Hexo
 - Markdown
+- Git
 categories: Writing
 ---
 
@@ -102,3 +103,17 @@ fatal: unable to access 'https://github.com/laobadao/laobadao.github.io.git/': S
 git push git@github.com:laobadao/laobadao.github.io.git hexo
 ```
 bingo 成功啦
+
+## Command-line
+
+列出当前路径下的 .dex 文件，当时是为了查看打包后的 classes.dex 有多少个方法数。
+
+```
+$ find . | grep ".dex"
+```
+
+查看指定路径下的 classes.dex 有多少个方法数。
+
+```
+$ cat build/dex/debug/classes.dex | head -c 92 | tail -c 4 | hexdump -e '1/4 "%d\n"' // 中间的 build/dex/debug/classes.dex  是你本地的 classes.dex 的路径，需要修改
+```
