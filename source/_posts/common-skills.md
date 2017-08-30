@@ -40,6 +40,18 @@ $ hexo d //deploy
 
 ## Markdown
 
+title: 文章题目标题
+
+date: 2017-06-15 22:23:11
+
+tags:
+  - Kotlin
+
+categories: Kotlin
+
+comments: true
+
+*注意：标签前不要加空格*
 ---
 
 ## Git
