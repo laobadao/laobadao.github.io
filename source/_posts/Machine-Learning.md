@@ -13,4 +13,6 @@ comments: true
 
 [Medium - 机器学习专题引导篇 ](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12)
 
-1. https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12
+1. Machine Learning for Humans | Why Machine Learning Matters
+
+ https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12
