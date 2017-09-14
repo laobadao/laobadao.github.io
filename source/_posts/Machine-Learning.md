@@ -18,4 +18,17 @@ comments: true
 
  https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12
 
-2.
+2. Machine Learning is Fun!
+The world’s easiest introduction to Machine Learning
+
+ https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471
+
+ 知乎中文翻译：
+
+ 机器学习原来这么有趣！第一章：全世界最简单的机器学习入门指南
+
+ https://zhuanlan.zhihu.com/p/24339995
+
+
+ 3. 知乎---机器学习翻译系列：    
+   https://www.zhihu.com/people/zhao95/posts
