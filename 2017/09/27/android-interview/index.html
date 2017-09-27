@@ -10,7 +10,7 @@
     
     <title>
         
-            Categories: Kotlin-Android | 
+            Android Interview | 
         
         ZJ.Improve
     </title>
@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="ZJ">
     <meta name="description" content="what really leads to success?">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,Android,Interview">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/logo_zj.png">
@@ -58,9 +58,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://laobadao.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Categories: Kotlin-Android | ZJ.Improve">
+    <meta property="og:title" content="Android Interview | ZJ.Improve">
     <meta property="og:description" content="what really leads to success?">
-    
+    <meta property="og:article:tag" content="Android"> <meta property="og:article:tag" content="Interview"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -221,97 +221,227 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Data-Structures"><span class="post-toc-number">1.</span> <span class="post-toc-text">Data Structures</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Algorithms"><span class="post-toc-number">2.</span> <span class="post-toc-text">Algorithms</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Core-Java"><span class="post-toc-number">3.</span> <span class="post-toc-text">Core Java</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Core-Android"><span class="post-toc-number">4.</span> <span class="post-toc-text">Core Android</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Architecture"><span class="post-toc-number">5.</span> <span class="post-toc-text">Architecture</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Design-Problem"><span class="post-toc-number">6.</span> <span class="post-toc-text">Design Problem</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Tools-And-Technologies"><span class="post-toc-number">7.</span> <span class="post-toc-text">Tools And Technologies</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android-Test-Driven-Development"><span class="post-toc-number">8.</span> <span class="post-toc-text">Android Test Driven Development</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Others"><span class="post-toc-number">9.</span> <span class="post-toc-text">Others</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/05/27/kotlin-basic-rule-one/">基础篇 | Kotlin 学习笔记-编码规范(一)</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-“Willpower is for people who are still uncertain about what t...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/05/27/kotlin-basic-rule-one/" target="_self">Continue Reading</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar_m.png" width="44px" height="44px" alt="ZJ's avatar">
-            </div>
-            <div>
-                <strong>ZJ</strong>
-                <span>May 27, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/Kotlin-Android/">Kotlin-Android</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Android Interview
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar_m.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>ZJ</strong>
+        <span>Sep 27, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Android/">Android</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Interview/">Interview</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Android Interview&url=https://laobadao.github.io//2017/09/27/android-interview/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Android Interview&url=https://laobadao.github.io//2017/09/27/android-interview/index.html&via=ZJ" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://laobadao.github.io//2017/09/27/android-interview/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://laobadao.github.io//2017/09/27/android-interview/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <blockquote>
+<p>“Luck is what happens when preparation meets opportunity.”  ― Seneca</p>
+</blockquote>
+<h1 id="Data-Structures"><a href="#Data-Structures" class="headerlink" title="Data Structures"></a>Data Structures</h1><h1 id="Algorithms"><a href="#Algorithms" class="headerlink" title="Algorithms"></a>Algorithms</h1><h1 id="Core-Java"><a href="#Core-Java" class="headerlink" title="Core Java"></a>Core Java</h1><h1 id="Core-Android"><a href="#Core-Android" class="headerlink" title="Core Android"></a>Core Android</h1><h1 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a>Architecture</h1><h1 id="Design-Problem"><a href="#Design-Problem" class="headerlink" title="Design Problem"></a>Design Problem</h1><h1 id="Tools-And-Technologies"><a href="#Tools-And-Technologies" class="headerlink" title="Tools And Technologies"></a>Tools And Technologies</h1><h1 id="Android-Test-Driven-Development"><a href="#Android-Test-Driven-Development" class="headerlink" title="Android Test Driven Development"></a>Android Test Driven Development</h1><h1 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h1>
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/09/21/book/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
