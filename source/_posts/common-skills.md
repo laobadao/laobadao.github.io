@@ -129,3 +129,11 @@ $ find . | grep ".dex"
 ```
 $ cat build/dex/debug/classes.dex | head -c 92 | tail -c 4 | hexdump -e '1/4 "%d\n"' // 中间的 build/dex/debug/classes.dex  是你本地的 classes.dex 的路径，需要修改
 ```
+
+## Python
+#### 安装可视化依赖包 matplotlib
+python3 环境下的安装或升级
+```
+pip3 install matplotlib  
+pip3 install --upgrade matplotlib
+```

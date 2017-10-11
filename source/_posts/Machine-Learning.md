@@ -32,3 +32,7 @@ The world’s easiest introduction to Machine Learning
 
  3. 知乎---机器学习翻译系列：    
    https://www.zhihu.com/people/zhao95/posts
+
+## Python & ML | 实战篇
+
+1. [Python3《机器学习实战》学习笔记（一）：k-近邻算法(史诗级干货长文](https://zhuanlan.zhihu.com/p/28656126)

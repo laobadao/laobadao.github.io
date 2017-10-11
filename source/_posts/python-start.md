@@ -19,3 +19,14 @@ comments: true
 ![python_windows](python-start/windows.png)
 
 ![python_windows_64](python-start/windows_64.png)
+
+
+### SciPy + NumPy
+
+**能把自己蠢死*
+
+-  下载 numpy‑1.13.2+mkl‑cp36‑cp36m‑win_amd64.whl  看好系统参数 （）[http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy]
+
+- pip install numpy‑1.13.2+mkl‑cp36‑cp36m‑win_amd64.whl  # 本地路径安装
+
+-
