@@ -136,5 +136,4 @@ python3 环境下的安装或升级
 ```
 pip3 install matplotlib  
 pip3 install --upgrade matplotlib
-pip3 install matplotlib-2.1.0-cp36-cp36m-win_amd64.whl // 本地路径有该安装包
 ```
