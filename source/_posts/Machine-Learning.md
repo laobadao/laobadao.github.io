@@ -36,3 +36,10 @@ The world’s easiest introduction to Machine Learning
 ## Python & ML | 实战篇
 
 1. [Python3《机器学习实战》学习笔记（一）：k-近邻算法(史诗级干货长文](https://zhuanlan.zhihu.com/p/28656126)
+
+  个人总结：KNN 算法：基于距离度量公式，文中以欧氏距离公式为例，进行距离度量，其他的还有 切比雪夫距离，马氏距离，巴氏距离等。
+
+  用途：用于分类。
+2. [Python3《机器学习实战》学习笔记（二）：决策树基础篇之让我们从相亲说起](https://zhuanlan.zhihu.com/p/28688281)
+
+  个人总结：决策树 ：基于 经验熵、信息增益的计算，如何选择最优特征作为分类特征。
