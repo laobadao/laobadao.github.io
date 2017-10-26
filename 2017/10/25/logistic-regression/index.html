@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Wed Oct 25 2017 10:17:46 GMT+0800" />
-        <meta property="article:modified_time" content="Thu Oct 26 2017 15:49:23 GMT+0800" />
+        <meta property="article:modified_time" content="Thu Oct 26 2017 16:27:33 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "https://laobadao.github.io/2017/10/25/logistic-regression/index.html",
     "headline": "机器学习实战 | Logistic Regression",
     "datePublished": "Wed Oct 25 2017 10:17:46 GMT+0800",
-    "dateModified": "Thu Oct 26 2017 15:49:23 GMT+0800",
+    "dateModified": "Thu Oct 26 2017 16:27:33 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ZJ",
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Logistic-回归"><span class="post-toc-number">1.</span> <span class="post-toc-text">Logistic 回归</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数学基础"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">数学基础</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SKlearn-Logistic-Regression"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">SKlearn Logistic Regression</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#总结："><span class="post-toc-number">1.3.</span> <span class="post-toc-text">总结：</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Logistic-回归"><span class="post-toc-number">1.</span> <span class="post-toc-text">Logistic 回归</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数学基础"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">数学基础</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SKlearn-Logistic-Regression"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">SKlearn Logistic Regression</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#总结："><span class="post-toc-number">1.3.</span> <span class="post-toc-text">总结：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1、Logistic回归的优缺点"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">1、Logistic回归的优缺点</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2、其他"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">2、其他</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -546,6 +546,20 @@
 <li><p>同时，sag每次仅仅使用了部分样本进行梯度迭代，所以当样本量少的时候不要选择它，而如果样本量非常大，比如大于10万，sag是第一选择。但是sag不能用于L1正则化，所以当你有大量的样本，又需要L1正则化的话就要自己做取舍了。要么通过对样本采样来降低样本量，要么回到L2正则化。</p>
 </li>
 <li><p>从上面的描述，大家可能觉得，既然newton-cg, lbfgs和sag这么多限制，如果不是大样本，我们选择liblinear不就行了嘛！错，因为liblinear也有自己的弱点！我们知道，逻辑回归有二元逻辑回归和多元逻辑回归。对于多元逻辑回归常见的有one-vs-rest(OvR)和many-vs-many(MvM)两种。而MvM一般比OvR分类相对准确一些。郁闷的是liblinear只支持OvR，不支持MvM，这样如果我们需要相对精确的多元逻辑回归时，就不能选择liblinear了。也意味着如果我们需要相对精确的多元逻辑回归不能使用L1正则化了。</p>
+</li>
+</ul>
+<h4 id="1、Logistic回归的优缺点"><a href="#1、Logistic回归的优缺点" class="headerlink" title="1、Logistic回归的优缺点"></a>1、Logistic回归的优缺点</h4><ul>
+<li><p>优点：</p>
+<p>实现简单，易于理解和实现；计算代价不高，速度很快，存储资源低。</p>
+</li>
+<li><p>缺点：</p>
+<p>容易欠拟合，分类精度可能不高。</p>
+</li>
+</ul>
+<h4 id="2、其他"><a href="#2、其他" class="headerlink" title="2、其他"></a>2、其他</h4><ul>
+<li><p>Logistic回归的目的是寻找一个非线性函数Sigmoid的最佳拟合参数，求解过程可以由最优化算法完成。<br>改进的一些最优化算法，比如sag。它可以在新数据到来时就完成参数更新，而不需要重新读取整个数据集来进行批量处理。</p>
+</li>
+<li><p>机器学习的一个重要问题就是如何处理缺失数据。<br>这个问题没有标准答案，取决于实际应用中的需求。现有一些解决方案，每种方案都各有优缺点。<br>我们需要根据数据的情况，这是Sklearn的参数，以期达到更好的分类效果。</p>
 </li>
 </ul>
 
