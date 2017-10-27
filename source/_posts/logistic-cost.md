@@ -40,12 +40,10 @@ comments: true
 (3) ![常数乘函数](/logistic-cost/cu.png)
 
 (4) ![商求导](/logistic-cost/uuv.png)
- - 复合函数求导法则
-
+- 复合函数求导法则
  设 ![复合求导](/logistic-cost/f1.png) 而![复合求导](/logistic-cost/u1.png) 且![复合求导](/logistic-cost/f.png)  及 ![复合求导](/logistic-cost/x1.png) 都可导，则复合函数 ![复合求导](/logistic-cost/c1.png)  的导数为
 
   ![复合求导](/logistic-cost/fy.png)
-
 
   ## Logistic 回归的 Cost function 的推导过程：
 
