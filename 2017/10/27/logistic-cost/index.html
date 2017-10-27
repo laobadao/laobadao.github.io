@@ -37,7 +37,7 @@
     
     <title>
         
-            Logistic回归-代价/函数求导过程 | 内含数学相关基础 | 
+            Logistic回归-代价函数求导过程 | 内含数学相关基础 | 
         
         ZJ.Improve
     </title>
@@ -231,18 +231,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://laobadao.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Logistic回归-代价/函数求导过程 | 内含数学相关基础 | ZJ.Improve">
+    <meta property="og:title" content="Logistic回归-代价函数求导过程 | 内含数学相关基础 | ZJ.Improve">
     <meta property="og:image" content="https://laobadao.github.io/img/logo_zj.png" />
     <meta property="og:description" content="what really leads to success?">
     <meta property="og:article:tag" content="Machine Learning"> <meta property="og:article:tag" content="Logistic Regression"> <meta property="og:article:tag" content="Cost Function"> 
 
     
         <meta property="article:published_time" content="Fri Oct 27 2017 10:21:32 GMT+0800" />
-        <meta property="article:modified_time" content="Fri Oct 27 2017 11:31:35 GMT+0800" />
+        <meta property="article:modified_time" content="Fri Oct 27 2017 13:48:44 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Logistic回归-代价/函数求导过程 | 内含数学相关基础 | ZJ.Improve">
+    <meta name="twitter:title" content="Logistic回归-代价函数求导过程 | 内含数学相关基础 | ZJ.Improve">
     <meta name="twitter:description" content="what really leads to success?">
     <meta name="twitter:image" content="https://laobadao.github.io/img/logo_zj.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -263,9 +263,9 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "mainEntityOfPage": "https://laobadao.github.io/2017/10/27/logistic-cost/index.html",
-    "headline": "Logistic回归-代价/函数求导过程 | 内含数学相关基础",
+    "headline": "Logistic回归-代价函数求导过程 | 内含数学相关基础",
     "datePublished": "Fri Oct 27 2017 10:21:32 GMT+0800",
-    "dateModified": "Fri Oct 27 2017 11:31:35 GMT+0800",
+    "dateModified": "Fri Oct 27 2017 13:48:44 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ZJ",
@@ -381,7 +381,7 @@
         
     
             <p class="article-headline-p">
-                Logistic回归-代价/函数求导过程 | 内含数学相关基础
+                Logistic回归-代价函数求导过程 | 内含数学相关基础
             </p>
         </div>
 
@@ -440,7 +440,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Logistic回归-代价/函数求导过程 | 内含数学相关基础&url=https://laobadao.github.io/2017/10/27/logistic-cost/index.html&pic=https://laobadao.github.io/img/logo_zj.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Logistic回归-代价函数求导过程 | 内含数学相关基础&url=https://laobadao.github.io/2017/10/27/logistic-cost/index.html&pic=https://laobadao.github.io/img/logo_zj.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 Share to Weibo
             </li>
@@ -449,7 +449,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Logistic回归-代价/函数求导过程 | 内含数学相关基础&url=https://laobadao.github.io/2017/10/27/logistic-cost/index.html&via=ZJ" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Logistic回归-代价函数求导过程 | 内含数学相关基础&url=https://laobadao.github.io/2017/10/27/logistic-cost/index.html&via=ZJ" target="_blank">
             <li class="mdl-menu__item">
                 Share to Twitter
             </li>
@@ -491,19 +491,25 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h2 id="相关函数求导公式"><a href="#相关函数求导公式" class="headerlink" title="相关函数求导公式"></a>相关函数求导公式</h2><pre><code>先复习回顾下一些数学基础，帮助推导过程可以更好的理解。下面列举的公式都是，接下来的推导中会用到的，没有涉及到的公式，此处不再列举。
-</code></pre><ul>
+        <h2 id="相关函数求导公式"><a href="#相关函数求导公式" class="headerlink" title="相关函数求导公式"></a>相关函数求导公式</h2><p>  先复习回顾下一些数学基础，帮助推导过程可以更好的理解。下面列举的公式都是，接下来的推导中会用到的，没有涉及到的公式，此处不再列举。</p>
+<ul>
 <li>常数项求导</li>
 </ul>
-<p><img src="logistic-cost/c.png" alt="常数项"></p>
+<p><img src="/logistic-cost/c.png" alt="常数项"></p>
 <ul>
 <li>函数的和、差、积、商的求导法则</li>
 </ul>
-<p>设 <img src="logistic-cost/u.png" alt="u">，都可导，则</p>
-<p>(1) <img src="logistic-cost/v.png" alt="和差求导"></p>
-<p>(2) <img src="logistic-cost/uv.png" alt="乘积求导"></p>
-<p>(3) <img src="logistic-cost/cu.png" alt="常数乘函数"></p>
-<p>(4) <img src="logistic-cost/uuv.png" alt="商求导"></p>
+<p>设 <img src="/logistic-cost/u.png" alt="u">，都可导，则</p>
+<p>(1) <img src="/logistic-cost/v.png" alt="和差求导"></p>
+<p>(2) <img src="/logistic-cost/uv.png" alt="乘积求导"></p>
+<p>(3) <img src="/logistic-cost/cu.png" alt="常数乘函数"></p>
+<p>(4) <img src="/logistic-cost/uuv.png" alt="商求导"></p>
+<ul>
+<li><p>复合函数求导法则</p>
+<p>设 <img src="/logistic-cost/f1.png" alt="复合求导"> 而<img src="/logistic-cost/u1.png" alt="复合求导"> 且<img src="/logistic-cost/f.png" alt="复合求导">  及 <img src="/logistic-cost/x1.png" alt="复合求导"> 都可导，则复合函数 <img src="/logistic-cost/c1.png" alt="复合求导">  的导数为</p>
+<p><img src="/logistic-cost/fy.png" alt="复合求导"></p>
+</li>
+</ul>
 
         
     
