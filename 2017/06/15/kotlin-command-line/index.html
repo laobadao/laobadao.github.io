@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Thu Jun 15 2017 22:23:11 GMT+0800" />
-        <meta property="article:modified_time" content="Wed Aug 30 2017 08:33:34 GMT+0800" />
+        <meta property="article:modified_time" content="Fri Oct 27 2017 16:42:48 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "https://laobadao.github.io/2017/06/15/kotlin-command-line/index.html",
     "headline": "基础篇 | Kotlin 环境搭建-命令行",
     "datePublished": "Thu Jun 15 2017 22:23:11 GMT+0800",
-    "dateModified": "Wed Aug 30 2017 08:33:34 GMT+0800",
+    "dateModified": "Fri Oct 27 2017 16:42:48 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ZJ",
@@ -517,17 +517,17 @@
 <p>Unzip the standalone compiler into a directory and optionally add the bin directory to the system path. The bin directory contains the scripts needed to compile and run Kotlin on Windows, OS X and Linux.</p>
 </blockquote>
 <p>todo 我用的这种方式，最简单，最高效，主要是其他几种方式，在我 mac 电脑上都有点问题。so ，不过当然那些问题后续都会再去解决的。</p>
-<p><img src="kotlin-command-line/kotlin_release.png" alt="下载的 kotlin-release 包"></p>
+<p><img src="/2017/06/15/kotlin-command-line/kotlin_release.png" alt="下载的 kotlin-release 包"></p>
 <p>.zip 包下载完之后，解压，把解压后的文件夹，挪到个固定的，不会不小心删掉的地方，打开找到 bin 文件夹，然后配置在 Mac 上的环境变量，我还是整了个 Kotlin_Home ,以便后期更新 Kotlin ,当然如果你选的其他方式安装的，这个就省略啦,先打开几个 terminal 窗口待用。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nano ~/.bash_profile //使用 nano 命令打开 .bash_profile 修改环境变量</div></pre></td></tr></table></figure>
 <p>之后新打开了一个编辑窗口，添加以下代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export KOTLIN_HOME=/Users/zhaojunjun/kotlinc</div><div class="line"></div><div class="line">export PATH=$PATH:$KOTLIN_HOME/bin</div></pre></td></tr></table></figure>
-<p><img src="kotlin-command-line/kotlin_path.png" alt="配置 kotlin 环境变量"></p>
+<p><img src="/2017/06/15/kotlin-command-line/kotlin_path.png" alt="配置 kotlin 环境变量"></p>
 <p>按照提示保存配置并退出,之后输入以下命令使配置生效</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source ~/.bash_profile</div></pre></td></tr></table></figure>
 <p>哒哒，接下来就是见证奇迹的时刻。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ kotlinc -help //输入此命令后，若出现一些帮助命令，则安装配置成功</div><div class="line">$ kotlinc-jvm //输入此命令，会进入交互式操作</div></pre></td></tr></table></figure>
-<p><img src="kotlin-command-line/kotlin_jvm.png" alt="kotlinc-jvm"></p>
+<p><img src="/2017/06/15/kotlin-command-line/kotlin_jvm.png" alt="kotlinc-jvm"></p>
 <h2 id="创建并运行第一个应用程序"><a href="#创建并运行第一个应用程序" class="headerlink" title="创建并运行第一个应用程序"></a>创建并运行第一个应用程序</h2><blockquote>
 <p>Creating and running a first application</p>
 </blockquote>
@@ -545,16 +545,16 @@
 <p>The -d option indicates what we want the output of the compiler to be called and may be either a directory name for class files or a .jar file name. The -include-runtime option makes the resulting .jar file self-contained and runnable by including the Kotlin runtime library in it. If you want to see all available options run : kotlinc -help</p>
 </blockquote>
 <p>我们通过 kotlinc 去编译 hello.kt 文件，-include-runtime 选项，表示通过把 Kotlin 运行时库包含进来，来运行 hello.kt 中的代码，最后生成 .jar 文件。-d 选项表示，通过调用编译器的输出，最后生成 hello.jar ，kotlin 是基于 jvm（Java Virtual Machine) 的语言，最终还是生成 jar包的，当然也可以是类文件的目录名称或.jar文件名。其他的命令选项可以通过运行 kotlinc -help 来进行查看.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$ kotlinc hello.kt -include-runtime -d hello0.jar//生成的 jar包命名为 hello0.jar</div><div class="line"></div><div class="line">$ kotlinc hello.kt -include-runtime -d hello20.jar //生成的 jar包命名为 hello20.jar</div><div class="line"></div><div class="line">$ kotlinc hello.kt -include-runtime -d hello20 //生成 hello20 命名的目录文件夹 里面包含 .class文件等</div><div class="line"></div><div class="line">$ kotlinc hello.kt -include-runtime -d hellofolder //生成 hellofolder 命名的目录文件夹 里面包含 .class文件等</div></pre></td></tr></table></figure></p>
-<p><img src="kotlin-command-line/kotlin_jar.png" alt="kotlinc runtime"></p>
+<p><img src="/2017/06/15/kotlin-command-line/kotlin_jar.png" alt="kotlinc runtime"></p>
 <p>其实也就20多种，命令也不多，可以整体看一看，了解一下。</p>
-<p><img src="kotlin-command-line/kotlin_help.png" alt="kotlinc-help"></p>
+<p><img src="/2017/06/15/kotlin-command-line/kotlin_help.png" alt="kotlinc-help"></p>
 <p>todo</p>
 <p>-3. 运行应用程序</p>
 <blockquote>
 <p>Run the application.</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ java -jar hello20.jar //执行该语句，运行 hello20.jar 如下输出</div></pre></td></tr></table></figure>
-<p><img src="kotlin-command-line/java_jar.png" alt="java -jar"></p>
+<p><img src="/2017/06/15/kotlin-command-line/java_jar.png" alt="java -jar"></p>
 <h2 id="编译库-Compiling-a-library"><a href="#编译库-Compiling-a-library" class="headerlink" title="编译库 Compiling a library"></a>编译库 Compiling a library</h2><blockquote>
 <p>If you’re developing a library to be used by other Kotlin applications, you can produce the .jar file without including the Kotlin runtime into it.</p>
 </blockquote>
@@ -571,10 +571,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ kotlin -classpath hello.jar HelloKt // 使用 kotlinc -classpath 去运之前编译生成的 hello.jar 包中的 名为 HelloKt.class</div></pre></td></tr></table></figure>
 <p>这个就要连贯起来说了，比如我一开始创建的是 hellozj.kt ,然后我使用命令将其编译生成的是 hellozjlib.jar 包，我特意都是使用的不同的名字，以便了解其原理，最后当我要使用 kotlin -classpath 去运行某个 jar 包的二进制文件时，其实是去看  jar 包中的 .class 文件。</p>
 <p>其实就是想搞明白为什么官网中上述语句，最后跟着的是 HelloKt，这个到底是哪来的。</p>
-<p><img src="kotlin-command-line/kotlin_classpath.png" alt="kotlinc all"></p>
+<p><img src="/2017/06/15/kotlin-command-line/kotlin_classpath.png" alt="kotlinc all"></p>
 <p>e.g. 当我只在当前窗口执行以下语句,则会在 hellozj.kt 文件同级目录下生成 HellozjKt.class 和 META-INF</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ kotlinc hellozj.kt</div></pre></td></tr></table></figure>
-<p><img src="kotlin-command-line/kotlinc_kt.png" alt="kotlinc hellozj.kt"></p>
+<p><img src="/2017/06/15/kotlin-command-line/kotlinc_kt.png" alt="kotlinc hellozj.kt"></p>
 
         
     
