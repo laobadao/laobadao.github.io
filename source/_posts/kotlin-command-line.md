@@ -41,7 +41,7 @@ comments: true
 
 todo 我用的这种方式，最简单，最高效，主要是其他几种方式，在我 mac 电脑上都有点问题。so ，不过当然那些问题后续都会再去解决的。
 
-![下载的 kotlin-release 包](kotlin-command-line/kotlin_release.png)
+![下载的 kotlin-release 包](/2017/06/15/kotlin-command-line/kotlin_release.png)
 
 .zip 包下载完之后，解压，把解压后的文件夹，挪到个固定的，不会不小心删掉的地方，打开找到 bin 文件夹，然后配置在 Mac 上的环境变量，我还是整了个 Kotlin_Home ,以便后期更新 Kotlin ,当然如果你选的其他方式安装的，这个就省略啦,先打开几个 terminal 窗口待用。
 
@@ -58,7 +58,7 @@ export KOTLIN_HOME=/Users/zhaojunjun/kotlinc
 export PATH=$PATH:$KOTLIN_HOME/bin
 ```
 
-![配置 kotlin 环境变量](kotlin-command-line/kotlin_path.png)
+![配置 kotlin 环境变量](/2017/06/15/kotlin-command-line/kotlin_path.png)
 
 按照提示保存配置并退出,之后输入以下命令使配置生效
 
@@ -72,7 +72,7 @@ source ~/.bash_profile
 $ kotlinc -help //输入此命令后，若出现一些帮助命令，则安装配置成功
 $ kotlinc-jvm //输入此命令，会进入交互式操作
 ```
-![kotlinc-jvm](kotlin-command-line/kotlin_jvm.png)
+![kotlinc-jvm](/2017/06/15/kotlin-command-line/kotlin_jvm.png)
 
 ## 创建并运行第一个应用程序
 
@@ -109,11 +109,11 @@ $ kotlinc hello.kt -include-runtime -d hello20 //生成 hello20 命名的目录�
 
 $ kotlinc hello.kt -include-runtime -d hellofolder //生成 hellofolder 命名的目录文件夹 里面包含 .class文件等
 ```
-![kotlinc runtime](kotlin-command-line/kotlin_jar.png)
+![kotlinc runtime](/2017/06/15/kotlin-command-line/kotlin_jar.png)
 
 其实也就20多种，命令也不多，可以整体看一看，了解一下。
 
-![kotlinc-help](kotlin-command-line/kotlin_help.png)
+![kotlinc-help](/2017/06/15/kotlin-command-line/kotlin_help.png)
 
 todo
 
@@ -124,7 +124,7 @@ todo
 ```
 $ java -jar hello20.jar //执行该语句，运行 hello20.jar 如下输出
 ```
-![java -jar](kotlin-command-line/java_jar.png)
+![java -jar](/2017/06/15/kotlin-command-line/java_jar.png)
 
 ## 编译库 Compiling a library
 
@@ -152,7 +152,7 @@ $ kotlin -classpath hello.jar HelloKt // 使用 kotlinc -classpath 去运之前�
 
 其实就是想搞明白为什么官网中上述语句，最后跟着的是 HelloKt，这个到底是哪来的。
 
-![kotlinc all](kotlin-command-line/kotlin_classpath.png)
+![kotlinc all](/2017/06/15/kotlin-command-line/kotlin_classpath.png)
 
 
 e.g. 当我只在当前窗口执行以下语句,则会在 hellozj.kt 文件同级目录下生成 HellozjKt.class 和 META-INF
@@ -160,4 +160,4 @@ e.g. 当我只在当前窗口执行以下语句,则会在 hellozj.kt 文件同�
 ```
 $ kotlinc hellozj.kt
 ```
-![kotlinc hellozj.kt](kotlin-command-line/kotlinc_kt.png)
+![kotlinc hellozj.kt](/2017/06/15/kotlin-command-line/kotlinc_kt.png)

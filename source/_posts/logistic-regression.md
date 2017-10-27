@@ -16,7 +16,7 @@ categories: Machine Learning
 
 - 常数的导数是 0。
 - 分数求导 f=U/V , f'=(U'V-V'U)/V^2
-- ![求导公式](logistic-regression/y.png)
+- ![求导公式](/2017/10/25/logistic-regression/y.png)
 - y=e^(-x)
  y'=e^(-x) * (-x)'
    =-e^(-x)
