@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Fri Oct 27 2017 10:21:32 GMT+0800" />
-        <meta property="article:modified_time" content="Fri Oct 27 2017 13:48:44 GMT+0800" />
+        <meta property="article:modified_time" content="Fri Oct 27 2017 14:58:03 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "https://laobadao.github.io/2017/10/27/logistic-cost/index.html",
     "headline": "Logistic回归-代价函数求导过程 | 内含数学相关基础",
     "datePublished": "Fri Oct 27 2017 10:21:32 GMT+0800",
-    "dateModified": "Fri Oct 27 2017 13:48:44 GMT+0800",
+    "dateModified": "Fri Oct 27 2017 14:58:03 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ZJ",
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#相关函数求导公式"><span class="post-toc-number">1.</span> <span class="post-toc-text">相关函数求导公式</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#相关函数求导公式"><span class="post-toc-number">1.</span> <span class="post-toc-text">相关函数求导公式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Logistic-回归的-Cost-function-的推导过程："><span class="post-toc-number">2.</span> <span class="post-toc-text">Logistic 回归的 Cost function 的推导过程：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Logistic回归的代价函数可以统一写成如下一个等式："><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">Logistic回归的代价函数可以统一写成如下一个等式：</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -497,6 +497,18 @@
 </ul>
 <p><img src="/logistic-cost/c.png" alt="常数项"></p>
 <ul>
+<li>以 e 为底的指数求导公式</li>
+</ul>
+<p><img src="/logistic-cost/e.png" alt="e 为底的指数求导"></p>
+<ul>
+<li>对数复合求导公式</li>
+</ul>
+<p><img src="/logistic-cost/log.png" alt="对数复合求导公式"></p>
+<ul>
+<li>幂函数复合求导公式</li>
+</ul>
+<p><img src="/logistic-cost/yx.png" alt="对数复合求导公式"></p>
+<ul>
 <li>函数的和、差、积、商的求导法则</li>
 </ul>
 <p>设 <img src="/logistic-cost/u.png" alt="u">，都可导，则</p>
@@ -510,6 +522,11 @@
 <p><img src="/logistic-cost/fy.png" alt="复合求导"></p>
 </li>
 </ul>
+<h2 id="Logistic-回归的-Cost-function-的推导过程："><a href="#Logistic-回归的-Cost-function-的推导过程：" class="headerlink" title="Logistic 回归的 Cost function 的推导过程："></a>Logistic 回归的 Cost function 的推导过程：</h2><p>之前采用的是梯度下降算法用来求函数的最小值。</p>
+<p>  好吧，来吧正式开始了，有了以上的数学求导基础，接下来就容易多了，公式嘛，当初上学时，老师常说的一句话：“背过，记住！”</p>
+<h4 id="Logistic回归的代价函数可以统一写成如下一个等式："><a href="#Logistic回归的代价函数可以统一写成如下一个等式：" class="headerlink" title="Logistic回归的代价函数可以统一写成如下一个等式："></a>Logistic回归的代价函数可以统一写成如下一个等式：</h4><p>  <img src="/logistic-cost/jlog.png" alt="Logistic回归的代价函数"></p>
+<p>其中：<br><img src="/logistic-cost/tx.png" alt="sigmoid function"></p>
+<p><img src="/logistic-cost/nr.png" alt="sigmoid function"></p>
 
         
     
