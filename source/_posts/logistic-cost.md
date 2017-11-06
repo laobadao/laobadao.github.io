@@ -60,3 +60,15 @@ comments: true
 ![sigmoid function](/2017/10/27/logistic-cost/tx.png)
 
 ![sigmoid function](/2017/10/27/logistic-cost/nr.png)
+
+#### 下面开始我们的推导过程：如果要求![J](/2017/10/27/logistic-cost/J1.png) 对某一个参数![T](/2017/10/27/logistic-cost/T1.png) 的偏导数，则：
+
+ - 1.根据求导公式，可以先把常数项 ![J](/2017/10/27/logistic-cost/cm.png)提取出来，这样就只需要对求和符号内部的表达式求导，即：
+
+![J](/2017/10/27/logistic-cost/K1.png)
+
+其中 K(θ)' 为：
+（为方便显示，先把右上角表示第i个样本的上标去掉）
+![J](/2017/10/27/logistic-cost/K3.png)
+
+- 2.根据对数复合求导公式，![对数复合求导公式](/2017/10/27/logistic-cost/log.png)，对 K(θ)' 继续求导可得：
