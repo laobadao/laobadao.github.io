@@ -65,10 +65,36 @@ comments: true
 
  - 1.根据求导公式，可以先把常数项 ![J](/2017/10/27/logistic-cost/cm.png)提取出来，这样就只需要对求和符号内部的表达式求导，即：
 
-![J](/2017/10/27/logistic-cost/K1.png)
+## (1) ![J](/2017/10/27/logistic-cost/K1.png)
 
 其中 K(θ)' 为：
 （为方便显示，先把右上角表示第i个样本的上标去掉）
 ![J](/2017/10/27/logistic-cost/K3.png)
 
 - 2.根据对数复合求导公式，![对数复合求导公式](/2017/10/27/logistic-cost/log.png)，对 K(θ)' 继续求导可得：
+
+## (2) ![K](/2017/10/27/logistic-cost/K2.png)
+
+之后 需要对 ![K](/2017/10/27/logistic-cost/H2.png)
+
+现在 根据上面提到的
+
+- 幂函数复合求导公式
+
+![对数复合求导公式](/2017/10/27/logistic-cost/yx.png)
+
+- 以 e 为底的指数求导公式
+
+![e 为底的指数求导](/2017/10/27/logistic-cost/e.png)
+
+先对![h0](/2017/10/27/logistic-cost/h0.png) 求导：
+
+根据上面的已知公式：
+
+![h1](/2017/10/27/logistic-cost/h1.png)
+
+依据上面的商求导公式可得：
+
+![h1](/2017/10/27/logistic-cost/h4.png)
+
+![h5](/2017/10/27/logistic-cost/H5.png)
