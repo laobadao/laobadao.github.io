@@ -114,6 +114,7 @@ comments: true
 ![h16](/2017/10/27/logistic-cost/h16.png)
 
 ### 推导结果：
+
 ![h17](/2017/10/27/logistic-cost/h17.png)
 
 #### 结论：Logistic Regression 的目的是 求解一组最佳拟合参数 θ 。这个求解的过程是由最优化算法完成的。
