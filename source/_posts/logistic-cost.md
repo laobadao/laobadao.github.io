@@ -63,13 +63,13 @@ comments: true
 
 #### 下面开始我们的推导过程：如果要求![J](/2017/10/27/logistic-cost/J1.png) 对某一个参数![T](/2017/10/27/logistic-cost/T1.png) 的偏导数，则：
 
- - 1.根据求导公式，可以先把常数项 ![J](/2017/10/27/logistic-cost/cm.png)提取出来，这样就只需要对求和符号内部的表达式求导，即：
+ - 1.根据求导公式，可以先把常数项 ![cm](/2017/10/27/logistic-cost/cm.png)提取出来，这样就只需要对求和符号内部的表达式求导，即：
 
-## (1) ![J](/2017/10/27/logistic-cost/K1.png)
+## (1) ![K1](/2017/10/27/logistic-cost/K1.png)
 
 其中 K(θ)' 为：
 （为方便显示，先把右上角表示第i个样本的上标去掉）
-![J](/2017/10/27/logistic-cost/K3.png)
+![k3](/2017/10/27/logistic-cost/k3.png)
 
 - 2.根据对数复合求导公式，![对数复合求导公式](/2017/10/27/logistic-cost/log.png)，对 K(θ)' 继续求导可得：
 
@@ -91,10 +91,10 @@ comments: true
 
 根据上面的已知公式：
 
-![h1](/2017/10/27/logistic-cost/h1.png)
+![h1](/2017/10/27/logistic-cost/H1.png)
 
 依据上面的商求导公式可得：
 
-![h1](/2017/10/27/logistic-cost/h4.png)
+![h4](/2017/10/27/logistic-cost/h4.png)
 
 ![h5](/2017/10/27/logistic-cost/H5.png)
