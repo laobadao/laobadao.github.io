@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Fri Oct 27 2017 10:21:32 GMT+0800" />
-        <meta property="article:modified_time" content="Wed Nov 08 2017 18:13:08 GMT+0800" />
+        <meta property="article:modified_time" content="Mon Nov 13 2017 17:57:36 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "https://laobadao.github.io/2017/10/27/logistic-cost/index.html",
     "headline": "Logistic回归-代价函数求导过程 | 内含数学相关基础",
     "datePublished": "Fri Oct 27 2017 10:21:32 GMT+0800",
-    "dateModified": "Wed Nov 08 2017 18:13:08 GMT+0800",
+    "dateModified": "Mon Nov 13 2017 17:57:36 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ZJ",
@@ -523,9 +523,9 @@
 <p>其中：<br><img src="/2017/10/27/logistic-cost/tx.png" alt="sigmoid function"></p>
 <p><img src="/2017/10/27/logistic-cost/nr.png" alt="sigmoid function"></p>
 <h4 id="下面开始我们的推导过程：如果要求-对某一个参数-的偏导数，则："><a href="#下面开始我们的推导过程：如果要求-对某一个参数-的偏导数，则：" class="headerlink" title="下面开始我们的推导过程：如果要求 对某一个参数 的偏导数，则："></a>下面开始我们的推导过程：如果要求<img src="/2017/10/27/logistic-cost/J1.png" alt="J"> 对某一个参数<img src="/2017/10/27/logistic-cost/T1.png" alt="T"> 的偏导数，则：</h4><ul>
-<li>1.根据求导公式，可以先把常数项 <img src="/2017/10/27/logistic-cost/cm.png" alt="J">提取出来，这样就只需要对求和符号内部的表达式求导，即：</li>
+<li>1.根据求导公式，可以先把常数项 <img src="/2017/10/27/logistic-cost/cm.png" alt="cm">提取出来，这样就只需要对求和符号内部的表达式求导，即：</li>
 </ul>
-<h2 id="1"><a href="#1" class="headerlink" title="(1) "></a>(1) <img src="/2017/10/27/logistic-cost/K1.png" alt="J"></h2><p>其中 K(θ)’ 为：<br>（为方便显示，先把右上角表示第i个样本的上标去掉）<br><img src="/2017/10/27/logistic-cost/K3.png" alt="J"></p>
+<h2 id="1"><a href="#1" class="headerlink" title="(1) "></a>(1) <img src="/2017/10/27/logistic-cost/K1.png" alt="K1"></h2><p>其中 K(θ)’ 为：<br>（为方便显示，先把右上角表示第i个样本的上标去掉）<br><img src="/2017/10/27/logistic-cost/k3.png" alt="k3"></p>
 <ul>
 <li>2.根据对数复合求导公式，<img src="/2017/10/27/logistic-cost/log.png" alt="对数复合求导公式">，对 K(θ)’ 继续求导可得：</li>
 </ul>
@@ -541,9 +541,9 @@
 <p><img src="/2017/10/27/logistic-cost/e.png" alt="e 为底的指数求导"></p>
 <p>先对<img src="/2017/10/27/logistic-cost/h0.png" alt="h0"> 求导：</p>
 <p>根据上面的已知公式：</p>
-<p><img src="/2017/10/27/logistic-cost/h1.png" alt="h1"></p>
+<p><img src="/2017/10/27/logistic-cost/H1.png" alt="h1"></p>
 <p>依据上面的商求导公式可得：</p>
-<p><img src="/2017/10/27/logistic-cost/h4.png" alt="h1"></p>
+<p><img src="/2017/10/27/logistic-cost/h4.png" alt="h4"></p>
 <p><img src="/2017/10/27/logistic-cost/H5.png" alt="h5"></p>
 
         
