@@ -61,5 +61,73 @@ comments: true
 - 每个阶段的最优状态是由之前所有阶段的状态的组合得到的->搜索；
 - **每个阶段的最优状态可以从之前某个阶段的某个或某些状态直接得到而不管之前这个状态是如何得到的->动态规划。**
 
->每个阶段的最优状态可以从之前某个阶段的某个或某些状态直接得到--这个性质叫做 **最优子结构；** 
+>每个阶段的最优状态可以从之前某个阶段的某个或某些状态直接得到--这个性质叫做 **最优子结构；**
 >而不管之前这个状态是如何得到的--这个性质叫做 **无后效性。**
+
+### 对于[ 10. Regular Expression Matching] 这个问题：
+
+Some examples:
+
+isMatch(“aa”,”a”) → false “aa” 俩字母 ，”a”一个字母
+ aa 不符合 a 这个正则表达式
+
+isMatch(“aa”,”aa”) → true
+
+isMatch(“aaa”,”aa”) → false
+
+isMatch(“aa”, “a*”) → true “aa” 符合 a* ,开头字母是 a 后面的字母任意
+
+isMatch(“aa”, “.* ”) → true
+
+isMatch(“ab”, “.* ”) → true
+
+isMatch(“aab”, “c*a*b”) → true
+
+### 方法 1：Recursion 递归
+
+```python
+class Solution(object):
+    def isMatch(self, text, pattern):
+        if not pattern:
+            return not text
+
+        first_match = bool(text) and pattern[0] in {text[0], '.'}
+
+        if len(pattern) >= 2 and pattern[1] == '*':
+            return (self.isMatch(text, pattern[2:]) or
+                    first_match and self.isMatch(text[1:], pattern))
+        else:
+            return first_match and self.isMatch(text[1:], pattern[1:])
+```
+
+```java
+class Solution {
+    public boolean isMatch(String text, String pattern) {
+        if (pattern.isEmpty()) return text.isEmpty();
+        boolean first_match = (!text.isEmpty() &&
+                               (pattern.charAt(0) == text.charAt(0) || pattern.charAt(0) == '.'));
+
+        if (pattern.length() >= 2 && pattern.charAt(1) == '*'){
+            return (isMatch(text, pattern.substring(2)) ||
+                    (first_match && isMatch(text.substring(1), pattern)));
+        } else {
+            return first_match && isMatch(text.substring(1), pattern.substring(1));
+        }
+    }
+}
+```
+
+\[
+e ^ { 2 }
+\]
+
+#### Complexity Analysis： 复杂度分析
+
+  + Time Complexity: 时间复杂度
+
+  Let T,P be the lengths of the text and the pattern respectively.（让 T,P 分别代表 text 和 pattern 的长度），In the worst case, a call to **match(text[i:], pattern[2j:])** will be made  times, （最糟糕的情况，调用 match（）方法 ）
+ and strings of the order O(T - i)O(T−i) and O(P - 2*j)O(P−2∗j)
+will be made. Thus, the complexity has the order
+
+. With some effort outside the scope of this article,
+we can show this is bounded by
