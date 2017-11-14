@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Tue Nov 14 2017 09:34:10 GMT+0800" />
-        <meta property="article:modified_time" content="Tue Nov 14 2017 14:30:35 GMT+0800" />
+        <meta property="article:modified_time" content="Tue Nov 14 2017 16:57:02 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "https://laobadao.github.io/2017/11/14/leetcode/index.html",
     "headline": "Leetcode | Algorithm",
     "datePublished": "Tue Nov 14 2017 09:34:10 GMT+0800",
-    "dateModified": "Tue Nov 14 2017 14:30:35 GMT+0800",
+    "dateModified": "Tue Nov 14 2017 16:57:02 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ZJ",
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hard"><span class="post-toc-number">1.</span> <span class="post-toc-text">Hard</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【补充】DP-Dynamic-Programming-动态规划："><span class="post-toc-number">1.1.</span> <span class="post-toc-text">【补充】DP - Dynamic Programming 动态规划：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Question-什么是动态规划？动态规划的意义是什么？"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">Question: 什么是动态规划？动态规划的意义是什么？</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DP方程"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">DP方程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#LIS-i-max-LIS-j-1-j-lt-i-and-a-j-lt-a-i"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">LIS(i) = max{LIS(j)+1} j<i and a[j]<a[i]</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hard"><span class="post-toc-number">1.</span> <span class="post-toc-text">Hard</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【补充】DP-Dynamic-Programming-动态规划："><span class="post-toc-number">1.1.</span> <span class="post-toc-text">【补充】DP - Dynamic Programming 动态规划：</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Question-什么是动态规划？动态规划的意义是什么？"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">Question: 什么是动态规划？动态规划的意义是什么？</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DP方程"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">DP方程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#LIS-i-max-LIS-j-1-j-lt-i-and-a-j-lt-a-i"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">LIS(i) = max{LIS(j)+1} j<i and a[j]<a[i]</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#对于-10-Regular-Expression-Matching-这个问题："><span class="post-toc-number">1.4.</span> <span class="post-toc-text">对于[ 10. Regular Expression Matching] 这个问题：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#方法-1：Recursion-递归"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">方法 1：Recursion 递归</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Complexity-Analysis：-复杂度分析"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">Complexity Analysis： 复杂度分析</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -531,6 +531,22 @@
 <blockquote>
 <p>每个阶段的最优状态可以从之前某个阶段的某个或某些状态直接得到–这个性质叫做 <strong>最优子结构；</strong><br>而不管之前这个状态是如何得到的–这个性质叫做 <strong>无后效性。</strong></p>
 </blockquote>
+<h3 id="对于-10-Regular-Expression-Matching-这个问题："><a href="#对于-10-Regular-Expression-Matching-这个问题：" class="headerlink" title="对于[ 10. Regular Expression Matching] 这个问题："></a>对于[ 10. Regular Expression Matching] 这个问题：</h3><p>Some examples:</p>
+<p>isMatch(“aa”,”a”) → false “aa” 俩字母 ，”a”一个字母<br> aa 不符合 a 这个正则表达式</p>
+<p>isMatch(“aa”,”aa”) → true</p>
+<p>isMatch(“aaa”,”aa”) → false</p>
+<p>isMatch(“aa”, “a<em>”) → true “aa” 符合 a</em> ,开头字母是 a 后面的字母任意</p>
+<p>isMatch(“aa”, “.* ”) → true</p>
+<p>isMatch(“ab”, “.* ”) → true</p>
+<p>isMatch(“aab”, “c<em>a</em>b”) → true</p>
+<h3 id="方法-1：Recursion-递归"><a href="#方法-1：Recursion-递归" class="headerlink" title="方法 1：Recursion 递归"></a>方法 1：Recursion 递归</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isMatch</span><span class="params">(self, text, pattern)</span>:</span></div><div class="line">        <span class="keyword">if</span> <span class="keyword">not</span> pattern:</div><div class="line">            <span class="keyword">return</span> <span class="keyword">not</span> text</div><div class="line"></div><div class="line">        first_match = bool(text) <span class="keyword">and</span> pattern[<span class="number">0</span>] <span class="keyword">in</span> &#123;text[<span class="number">0</span>], <span class="string">'.'</span>&#125;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> len(pattern) &gt;= <span class="number">2</span> <span class="keyword">and</span> pattern[<span class="number">1</span>] == <span class="string">'*'</span>:</div><div class="line">            <span class="keyword">return</span> (self.isMatch(text, pattern[<span class="number">2</span>:]) <span class="keyword">or</span></div><div class="line">                    first_match <span class="keyword">and</span> self.isMatch(text[<span class="number">1</span>:], pattern))</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="keyword">return</span> first_match <span class="keyword">and</span> self.isMatch(text[<span class="number">1</span>:], pattern[<span class="number">1</span>:])</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isMatch</span><span class="params">(String text, String pattern)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (pattern.isEmpty()) <span class="keyword">return</span> text.isEmpty();</div><div class="line">        <span class="keyword">boolean</span> first_match = (!text.isEmpty() &amp;&amp;</div><div class="line">                               (pattern.charAt(<span class="number">0</span>) == text.charAt(<span class="number">0</span>) || pattern.charAt(<span class="number">0</span>) == <span class="string">'.'</span>));</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (pattern.length() &gt;= <span class="number">2</span> &amp;&amp; pattern.charAt(<span class="number">1</span>) == <span class="string">'*'</span>)&#123;</div><div class="line">            <span class="keyword">return</span> (isMatch(text, pattern.substring(<span class="number">2</span>)) ||</div><div class="line">                    (first_match &amp;&amp; isMatch(text.substring(<span class="number">1</span>), pattern)));</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">return</span> first_match &amp;&amp; isMatch(text.substring(<span class="number">1</span>), pattern.substring(<span class="number">1</span>));</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="Complexity-Analysis：-复杂度分析"><a href="#Complexity-Analysis：-复杂度分析" class="headerlink" title="Complexity Analysis： 复杂度分析"></a>Complexity Analysis： 复杂度分析</h4><ul>
+<li><p>Time Complexity: 时间复杂度</p>
+<p>Let T,P be the lengths of the text and the pattern respectively.（让 T,P 分别代表 text 和 pattern 的长度），In the worst case, a call to <strong>match(text[i:], pattern[2j:])</strong> will be made  times, （最糟糕的情况，调用 match（）方法 ）<br>and strings of the order O(T - i)O(T−i) and O(P - 2*j)O(P−2∗j)<br>will be made. Thus, the complexity has the order</p>
+</li>
+</ul>
+<p>. With some effort outside the scope of this article,<br>we can show this is bounded by</p>
 
         
     
