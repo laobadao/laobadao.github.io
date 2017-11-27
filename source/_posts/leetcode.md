@@ -139,3 +139,5 @@ will be made. Thus, the complexity has the order
 
 . With some effort outside the scope of this article,
 we can show this is bounded by
+
+$ sigmoid(x)= \frac {1}{1+ e^ {-x }}$
