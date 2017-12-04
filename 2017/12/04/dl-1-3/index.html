@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Mon Dec 04 2017 10:47:49 GMT+0800" />
-        <meta property="article:modified_time" content="Mon Dec 04 2017 17:29:43 GMT+0800" />
+        <meta property="article:modified_time" content="Mon Dec 04 2017 18:21:13 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "https://laobadao.github.io/2017/12/04/dl-1-3/index.html",
     "headline": "Coursera | deeplearning.ai | Andrew Ng (1-3)--浅层神经网络",
     "datePublished": "Mon Dec 04 2017 10:47:49 GMT+0800",
-    "dateModified": "Mon Dec 04 2017 17:29:43 GMT+0800",
+    "dateModified": "Mon Dec 04 2017 18:21:13 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ZJ",
@@ -516,6 +516,7 @@
 <p>$ReLU$ 弥补了前两者的缺陷，当 z&gt;0 时，梯度始终为 1，从而提高神经网络基于梯度算法的运算速度。然而当 z&lt;0 时，梯度一直为 0，但是实际的运用中，该缺陷的影响不是很大。</p>
 <p>$Leaky -ReLU$ 保证在 z&lt;0 的时候，梯度仍然不为 0。</p>
 <p>在选择激活函数的时候，如果在不知道该选什么的时候就选择 $ReLU$，当然也没有固定答案，要依据实际问题在交叉验证集合中进行验证分析。</p>
+<p>$F_a = F_b + F_c + F_{\mu}$</p>
 <p>[</p>
 <p>]</p>
 
@@ -884,26 +885,6 @@ It will not impact the appearance and can give developers a lot of support :)
 </script>
 
 <!-- MathJax Load-->
-
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    });
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-
-    <script type="text/javascript" src="/js/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
 
 
 <!-- Bing Background -->
