@@ -68,7 +68,7 @@ plugins:
  - hexo-math
 
 math:
-  engine: 'mathjax' # or 'katex'
+  engine: 'mathjax'
   mathjax:
     src: custom_mathjax_source
     config:
